@@ -56,8 +56,7 @@ cd ccpp
 And run install.sh
 
 ```
-chmod +x install.sh
-./install.sh
+chmod +x install.sh && ./install.sh
 ```
 
 Now, restart your shell and you will be able to use ccpp, try:
