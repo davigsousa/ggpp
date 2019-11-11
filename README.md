@@ -5,7 +5,6 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 ## About <a name = "about"></a>
 
@@ -29,32 +28,59 @@ Install ccpp is very simple.
 
 ### Prerequisites
 
-You will need python3 installed on your PC.<br>
+You will need **python3** installed on your PC.<br>
 For Python 3 installation, download on the [official page](https://www.python.org/downloads/).<br>
 
 - Python 3 is already installed on the most linux distributions.<br>
   Try run "`python3`" on your shell.
 
-As the ccpp is a g++ interface, you will need it installed too.
+As the ccpp is a **g++** interface, you will need it installed too.
+
+As a plus, if you want to copy the content of you C/C++ code automatically after ran it, you will need **xclip** installed. <br>
+For install it, you can follow this [useful guide](https://linoxide.com/linux-how-to/copy-paste-commands-output-xclip-linux/).
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Download or clone this repository
 
 ```
-Give the example
+git clone https://github.com/davig-sousa/ccpp.git
 ```
 
-And repeat
+Then, open the repository folder
 
 ```
-until finished
+cd ccpp
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+And run install.sh
+
+```
+chmod +x install.sh
+./install.sh
+```
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+You can run your C/C++ code,<br>
+just passing the filename as first argument.<br>
+
+```
+ccpp targetfile.cpp
+```
+
+You can also pass arguments to the g++ just passing in the end.
+
+```
+ccpp targetfile.cpp -Wall -H
+```
+
+Currently, there are two arguments to configure ccpp,<br>
+they are "-c" or "--clip" to copy file content to the clipboard (xclip is required), <br>
+And "-nr" or "--noremove" to make ccpp do not remove the compiled file.
+
+Usage:
+
+```
+ccpp example.cpp -c -nr
+```
