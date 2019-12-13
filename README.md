@@ -44,7 +44,7 @@ For install it, you can follow this [useful guide](https://linoxide.com/linux-ho
 Download or clone this repository
 
 ```
-git clone https://github.com/davig-sousa/ccpp.git
+git clone https://github.com/davigsousa/ccpp.git
 ```
 
 Then, open the repository folder
