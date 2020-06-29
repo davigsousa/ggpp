@@ -1,9 +1,9 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 
 setup(
@@ -17,8 +17,15 @@ setup(
     license="MIT",
     keywords="c++ cpp c h g++ interface",
     url="https://github.com/davigsousa/ccpp",
-    long_description=read('README.md'),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     entry_points={
         "console_scripts": ["ccpp=ccpp.__main__:run"]
-    }
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
