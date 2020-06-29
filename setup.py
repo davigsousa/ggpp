@@ -7,16 +7,16 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="ccpp",
+    name="ggpp",
     version="1.0",
     author="Davi Sousa",
-    packages=["ccpp"],
+    packages=["ggpp"],
     author_email="davi.gomes.sousa@ccc.ufcg.edu.br",
     description=(
-        "A simple g++ interface, to run easily C/C++ code on Linux and Windows."),
+        "An useful g++ interface, to run easily C/C++ code on Linux and Windows."),
     license="MIT",
     keywords="c++ cpp c h g++ interface",
-    url="https://github.com/davigsousa/ccpp",
+    url="https://github.com/davigsousa/ggpp",
     long_description=long_description,
     long_description_content_type="text/markdown",
     entry_points={

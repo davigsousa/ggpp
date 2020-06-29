@@ -8,10 +8,10 @@ def run():
     You can run your C/C++ code
     just passing the filename as first argument.
     Example:
-    'ccpp targetfile.cpp'
+    'ggpp targetfile.cpp'
     | You can also pass other arguments to the g++.
     Example:
-    'ccpp targetfile.cpp -Wall -H'
+    'ggpp targetfile.cpp -Wall -H'
     '''
 
     # Initialize Argument Parser
