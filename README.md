@@ -36,8 +36,9 @@ For Python 3 installation, download on the [official page](https://www.python.or
 
 As the ccpp is a **g++** interface, you will need it installed too.
 
-As a plus, if you want to copy the content of you C/C++ code automatically after ran it, you will need **xclip** installed. <br>
-For install it, you can follow this [useful guide](https://linoxide.com/linux-how-to/copy-paste-commands-output-xclip-linux/).
+As a plus, if you want to copy the content of you C/C++ code automatically after ran it, you will need **xclip** installed on linux. <br>
+For install it, you can follow this [useful guide](https://linoxide.com/linux-how-to/copy-paste-commands-output-xclip-linux/). <br>
+On Windows, to copy the content, you don't need any prerequisites.
 
 ### Installing
 
@@ -53,10 +54,10 @@ Then, open the repository folder
 cd ccpp
 ```
 
-And run install.sh
+And run pip3 to install the package.
 
 ```
-chmod +x install.sh && ./install.sh
+pip3 install .
 ```
 
 Now, restart your shell and you will be able to use ccpp, try:
@@ -68,7 +69,7 @@ ccpp --help
 ## Usage <a name = "usage"></a>
 
 You can run your C/C++ code,<br>
-just passing the filename as first argument.<br>
+just passing the filename as first argument. On Windows, you need file path, like: .\targetfile.cpp <br>
 
 ```
 ccpp targetfile.cpp
@@ -81,7 +82,7 @@ ccpp targetfile.cpp -Wall -H
 ```
 
 Currently, there are two arguments to configure ccpp,<br>
-they are "-c" or "--clip" to copy file content to the clipboard (xclip is required), <br>
+they are "-c" or "--clip" to copy file content to the clipboard (xclip is required on linux), <br>
 And "-nr" or "--noremove" to make ccpp do not remove the compiled file.
 
 Usage:
