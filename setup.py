@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     entry_points={
-        "console_scripts": ["ccpp=ccpp.__main__:run"]
+        "console_scripts": ["ggpp=ggpp.main:run"]
     },
     classifiers=[
         "Programming Language :: Python :: 3",
