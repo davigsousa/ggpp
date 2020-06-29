@@ -1,4 +1,4 @@
-# CCPP - A Simple g++ Interface
+# CCPP - An Useful g++ Interface
 
 ## Table of Contents
 
