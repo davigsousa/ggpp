@@ -44,13 +44,14 @@ def run():
     if os.name == 'nt':
 
         # Get the run command string
-        command += "powershell.exe g++ {} -o {} ; ".format(args.target_file,
-                                                           compiled_name) + gpp_args
+        command += "powershell.exe g++ {} -o {} {} ; if ($?)".format(args.target_file,
+                                                                     compiled_name, gpp_args) + " { "
 
-        command += "{}.exe ; ".format(compiled_name)
+        command += "{}.exe".format(compiled_name) + " } ; "
 
         if not args.noremove:
-            command += "rm -r {}.exe".format(compiled_name)
+            command += "if ($?)" + \
+                " { " + "rm -r {}.exe".format(compiled_name) + " } "
 
         # If "-c" or "--clip" exists, then run
         if args.clip:

@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="ggpp",
-    version="1.1",
+    version="1.1.2",
     author="Davi Sousa",
     packages=["ggpp"],
     author_email="davi.gomes.sousa@ccc.ufcg.edu.br",
